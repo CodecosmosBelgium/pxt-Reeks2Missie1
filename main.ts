@@ -1,1 +1,1 @@
-
+let wrongMoves = 0

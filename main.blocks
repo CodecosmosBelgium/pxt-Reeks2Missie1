@@ -1,10 +1,1 @@
-<xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="pxt-on-start"></block>
-  <block type="minecraftOnChat">
-    <value name="command">
-      <shadow type="text">
-        <field name="TEXT">run</field>
-      </shadow>
-    </value>
-  </block>
-</xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="Us;Bfrhx:$EXBKq9KHk3">wrongMoves</variable></variables><block type="pxt-on-start" id="PZTH2QP4ckUl4Qb;iKuQ" x="0" y="0"></block></xml>

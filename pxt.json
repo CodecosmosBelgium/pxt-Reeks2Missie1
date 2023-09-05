@@ -9,6 +9,10 @@
     "files": [
         "README.md",
         "main.blocks",
+        "t_level2.md",
+        "custom_functions.ts",
+        "t_level1_1.md",
+        "t_level1_2.md",
         "main.ts"
     ],
     "testFiles": [
@@ -22,5 +26,5 @@
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
