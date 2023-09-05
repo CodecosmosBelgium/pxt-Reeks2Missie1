@@ -31,7 +31,7 @@ namespace AgentExtension {
         for (let i = 0; i < amount; i++) {
             agent.move(direction, 1)
             let posBelowAgent = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
-            if (blocks.testForBlock(COBBLESTONE_SLAB, posBelowAgent)) {
+            if (blocks.testForBlock(COBBLESTONE, posBelowAgent)) {
                 wrongMoves++
             }
         }
