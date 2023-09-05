@@ -14,9 +14,9 @@ namespace AgentExtension {
     //% x.min=1 x.max=10
     export function agentMoveTwoDirectionForwardBack(direction: TwoDirectionForwardBack, amount: number) {
         for (let i = 0; i < amount; i++) {
-            agent.move(direction === 0 ? FORWARD : BACK, amount)
+            agent.move(direction === 0 ? FORWARD : BACK, 1)
             let posBelowAgent = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
-            if (blocks.testForBlock(GRAY_CONCRETE, posBelowAgent) || blocks.testForBlock(COBBLESTONE_SLAB, posBelowAgent)) {
+            if (blocks.testForBlock(GRAY_CONCRETE, posBelowAgent)) {
                 wrongMoves++
             }
         }        
@@ -28,7 +28,13 @@ namespace AgentExtension {
     //% amount.defl=1
     //% x.min=1 x.max=10
     export function agentMoveFourDirection(direction: FourDirection, amount: number) {
-        agent.move(direction, 1)         
+        for (let i = 0; i < 1; i++) {
+            agent.move(direction, 1)
+            let posBelowAgent = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
+            if (blocks.testForBlock(COBBLESTONE_SLAB, posBelowAgent)) {
+                wrongMoves++
+            }
+        }
     }
 }
 
