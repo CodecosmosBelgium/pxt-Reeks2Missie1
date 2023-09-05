@@ -36,6 +36,8 @@ player.onChat("parcour2", function () {
 
 ```template
 player.onChat("gogogo", function () {
+    agent.turn(LEFT_TURN)
+    AgentExtension.agentMoveFourDirection(Forward, 1)
     CodeCosmos.checkExercise()
 })
 

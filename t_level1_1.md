@@ -3,7 +3,7 @@
 # Mission 1 (v1.0)
 
 ```blocks
-player.onChat("goForwards", function () {
+player.onChat("goForward", function () {
     AgentExtension.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBack.Forward, 5)
 })
 
@@ -14,7 +14,7 @@ player.onChat("goBack", function () {
 ```
 
 ```template
-player.onChat("goForwards", function () {
+player.onChat("goForward", function () {
     AgentExtension.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBack.Forward, 3)
     CodeCosmos.checkExercise()
 })
