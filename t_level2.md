@@ -36,7 +36,7 @@ player.onChat("parcour2", function () {
 
 ```template
 player.onChat("gogogo", function () {
-
+    CodeCosmos.checkExercise()
 })
 
 ```

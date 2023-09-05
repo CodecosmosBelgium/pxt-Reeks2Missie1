@@ -35,7 +35,7 @@ namespace AgentExtension {
 namespace CodeCosmos {
     //% block="Check exercise"
     //% block.loc.nl="Controleer oefening"
-    export function checkExercise(): void {
+    export function checkExercise() {
         const posBelowAgent= world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
         
         if (blocks.testForBlock(EMERALD_BLOCK, posBelowAgent) && wrongMoves==0) {
