@@ -28,7 +28,7 @@ namespace AgentExtension {
     //% amount.defl=1
     //% x.min=1 x.max=10
     export function agentMoveFourDirection(direction: FourDirection, amount: number) {
-        agent.move(direction, amount)         
+        agent.move(direction, 1)         
     }
 }
 
