@@ -13,7 +13,8 @@
         "custom_functions.ts",
         "t_level1_1.md",
         "t_level1_2.md",
-        "main.ts"
+        "main.ts",
+        "t_no_exercise.md"
     ],
     "testFiles": [
         "test.ts"
