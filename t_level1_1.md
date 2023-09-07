@@ -15,7 +15,7 @@ player.onChat("goBack", function () {
 
 ```template
 player.onChat("goForward", function () {
-    AgentExtension.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBack.Forward, 3)
+    AgentExtension.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBack.Forward, 1)
     CodeCosmos.checkExercise()
 })
 
