@@ -20,9 +20,9 @@ namespace AgentExtension {
             }
             loops.pause(50);
             player.execute(`execute @p ~ ~ ~ setblock 87 43 74 redstone_block`)
-        }        
+        }
     }
-    
+
     //% block="agent move $direction by $amount"
     //% block.loc.nl="agent beweeg $direction met $amount stappen"
     export function agentMoveFourDirection(direction: FourDirection, amount: number) {
@@ -45,13 +45,17 @@ namespace CodeCosmos {
     //% block="check exercise"
     //% block.loc.nl="controleer oefening"
     export function checkExercise() {
-        const posBelowAgent= world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
-        if (blocks.testForBlock(EMERALD_BLOCK, posBelowAgent) && wrongMoves==0) {
+        const posBelowAgent = world(agent.getPosition().getValue(Axis.X), agent.getPosition().getValue(Axis.Y) - 1, agent.getPosition().getValue(Axis.Z))
+        if (blocks.testForBlock(EMERALD_BLOCK, posBelowAgent) && wrongMoves == 0) {
             player.execute(`function exercises/end_exercise`);
-        } else {
-            player.execute(wrongMoves === 0 ? `tellraw @s {"rawtext":[{"translate":"not.on.emerald.block"}]}` : `tellraw @s {"rawtext":[{"translate":"stepped.wrong.path"}]}`)
-            wrongMoves = 0;
+        } else if (blocks.testForBlock(EMERALD_BLOCK, posBelowAgent) && wrongMoves != 0) {
+            player.execute(`tellraw @s {"rawtext":[{"translate":"stepped.wrong.path"}]}`);
             player.execute(`function exercises/fail`);
         }
+        else {
+            player.execute(`tellraw @s {"rawtext":[{"translate":"not.on.emerald.block"}]}`);
+            player.execute(`function exercises/fail`);
+        }
+        wrongMoves = 0;
     }
 }

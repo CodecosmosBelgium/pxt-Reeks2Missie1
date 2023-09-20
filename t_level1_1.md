@@ -19,7 +19,7 @@ player.onChat("goForward", function () {
     CodeCosmos.checkExercise()
 })
 
-
 ```
+
 ## Use the learning platform
 Use the learning platform to solve the exercise.

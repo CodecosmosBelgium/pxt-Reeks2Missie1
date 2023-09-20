@@ -32,6 +32,7 @@ player.onChat("parcour2", function () {
     agent.turn(RIGHT_TURN)
 	AgentExtension.agentMoveFourDirection(FourDirection.Forward, 1)
 })
+
 ```
 
 ```template
@@ -42,5 +43,6 @@ player.onChat("gogogo", function () {
 })
 
 ```
+
 ## Use the learning platform
 Use the learning platform to solve the exercise.
