@@ -42,5 +42,5 @@ player.onChat("gogogo", function () {
 })
 
 ```
-## Building fields
+## Use the learning platform
 Use the learning platform to solve the exercise.

@@ -14,7 +14,9 @@
         "t_level1_1.md",
         "t_level1_2.md",
         "main.ts",
-        "t_no_exercise.md"
+        "t_no_exercise.md",
+        "t_level1_3.md",
+        "t_level1_4.md"
     ],
     "testFiles": [
         "test.ts"

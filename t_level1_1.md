@@ -21,5 +21,5 @@ player.onChat("goForward", function () {
 
 
 ```
-## Code debuggen
+## Use the learning platform
 Use the learning platform to solve the exercise.
