@@ -5,7 +5,7 @@
 ```blocks
 player.onChat("move", function () {
     AgentExtension.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBack.Forward, 2)
-    agent.RIGHT_TURN()
+    agent.turn(RIGHT_TURN)
     AgentExtension.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBack.Forward, 3)
     CodeCosmos.checkExercise()
 })
