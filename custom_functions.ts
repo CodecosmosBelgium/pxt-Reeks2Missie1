@@ -9,6 +9,7 @@ enum TwoDirectionForwardBack {
 namespace AgentExtension {
     //% block="agent move $direction by $amount"
     //% block.loc.nl="agent beweeg $direction met $amount stappen"
+    //% amount.defl=1
     export function agentMoveTwoDirectionForwardBack(direction: TwoDirectionForwardBack, amount: number) {
         for (let i = 0; i < amount; i++) {
             player.execute(`execute @p ~ ~ ~ setblock 87 43 74 air`)
