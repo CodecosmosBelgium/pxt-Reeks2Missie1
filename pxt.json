@@ -9,14 +9,20 @@
     "files": [
         "README.md",
         "main.blocks",
-        "t_level2.md",
         "custom_functions.ts",
-        "t_level1_1.md",
-        "t_level1_2.md",
         "main.ts",
         "t_no_exercise.md",
+        "t_level1_1.md",
+        "t_level1_2.md",
         "t_level1_3.md",
-        "t_level1_4.md"
+        "t_level1_4.md",
+        "t_level2.md",
+        "_locales/nl/t_no_exercise.md",
+        "_locales/nl/t_level1_1.md",
+        "_locales/nl/t_level1_2.md",
+        "_locales/nl/t_level1_3.md",
+        "_locales/nl/t_level1_4.md",
+        "_locales/nl/t_level2.md"
     ],
     "testFiles": [
         "test.ts"

@@ -8,7 +8,7 @@ enum TwoDirectionForwardBack {
 //% color="#D83B01" weight=100 icon="\uf20a" block="AgentExtension"
 namespace AgentExtension {
     //% block="agent move $direction by $amount"
-    //% block.loc.nl="agent beweeg $direction met $amount stappen"
+    //% block.loc.nl="agent beweeg $direction met $amount"
     //% amount.defl=1
     export function agentMoveTwoDirectionForwardBack(direction: TwoDirectionForwardBack, amount: number) {
         for (let i = 0; i < amount; i++) {
@@ -25,7 +25,7 @@ namespace AgentExtension {
     }
 
     //% block="agent move $direction by $amount"
-    //% block.loc.nl="agent beweeg $direction met $amount stappen"
+    //% block.loc.nl="agent beweeg $direction met $amount"
     export function agentMoveFourDirection(direction: FourDirection, amount: number) {
         for (let i = 0; i < amount; i++) {
             player.execute(`execute @p ~ ~ ~ setblock 87 43 74 air`)
