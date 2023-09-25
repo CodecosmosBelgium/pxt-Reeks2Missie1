@@ -10,6 +10,7 @@
         "README.md",
         "main.blocks",
         "custom_functions.ts",
+        "custom_functions_NL.ts",
         "main.ts",
         "t_no_exercise.md",
         "t_level1_1.md",
