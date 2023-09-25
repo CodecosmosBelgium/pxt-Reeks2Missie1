@@ -4,18 +4,18 @@
 
 ```blocks
 player.onChat("gaVooruit", function () {
-    AgentExtensionNL.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBack.Forward, 5)
+    AgentExtensionNL.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBackNL.Forward, 5)
 })
 
 player.onChat("gaTerug", function () {
-	AgentExtensionNL.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBack.Back, 5)
+	AgentExtensionNL.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBackNL.Back, 5)
 })
 
 ```
 
 ```template
 player.onChat("gaVooruit", function () {
-    AgentExtensionNL.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBack.Forward, 1)
+    AgentExtensionNL.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBackNL.Forward, 1)
     CodeCosmosNL.checkExercise()
 })
 

@@ -4,7 +4,7 @@
 
 ```blocks
 player.onChat("beweeg", function () {
-    AgentExtensionNL.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBack.Forward, 3)
+    AgentExtensionNL.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBackNL.Forward, 3)
     CodeCosmosNL.checkExercise()
 })
 
