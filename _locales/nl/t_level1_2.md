@@ -3,18 +3,18 @@
 # Missie 1 (v1.0)
 
 ```blocks
-player.onChat("goVooruit", function () {
+player.onChat("gaVooruit", function () {
     AgentExtensionNL.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBackNL.Forward, 5)
 })
 
-player.onChat("goTerug", function () {
+player.onChat("gaTerug", function () {
 	AgentExtensionNL.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBackNL.Back, 5)
 })
 
 ```
 
 ```template
-player.onChat("goTerug", function () {
+player.onChat("gaTerug", function () {
     AgentExtensionNL.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBackNL.Forward, 1)
     CodeCosmosNL.checkExercise()
 })
