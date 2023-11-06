@@ -14,7 +14,7 @@ player.onChat("gaTerug", function () {
 ```
 
 ```template
-player.onChat("gaVooruit", function () {
+player.onChat("level1", function () {
     AgentExtensionNL.agentMoveTwoDirectionForwardBack(TwoDirectionForwardBackNL.Forward, 1)
     CodeCosmosNL.checkExercise()
 })

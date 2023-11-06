@@ -13,7 +13,7 @@ player.onChat("move", function () {
 ```
 
 ```template
-player.onChat("move", function () {
+player.onChat("level4", function () {
     CodeCosmos.checkExercise()
 })
 

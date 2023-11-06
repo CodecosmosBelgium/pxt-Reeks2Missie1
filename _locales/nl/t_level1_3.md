@@ -11,7 +11,7 @@ player.onChat("beweeg", function () {
 ```
 
 ```template
-player.onChat("beweeg", function () {
+player.onChat("level3", function () {
     CodeCosmosNL.checkExercise()
 })
 

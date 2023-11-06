@@ -30,7 +30,7 @@ player.onChat("parcour2", function () {
 ```
 
 ```template
-player.onChat("gogogo", function () {
+player.onChat("extraLevel", function () {
     AgentExtensionNL.agentMoveFourDirection(FourDirection.Forward, 1)
     agent.turn(LEFT_TURN)
     CodeCosmosNL.checkExercise()
